@@ -15,7 +15,7 @@ const PostsList = () => {
   if (isLoading) return <Loading />;
   if (isError) return <h1>{JSON.stringify(error)}</h1>;
   return (
-    <div className='flex justify-center items-center flex-wrap'>
+    <div className='flex justify-stretch items-center flex-wrap mt-16'>
       {posts.map((post: Post) => (
         <PostCard key={post.id} post={post} />
       ))}

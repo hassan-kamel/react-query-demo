@@ -7,12 +7,12 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className=''>
+    <div className='min-h-screen flex justify-center items-center px-2'>
       <Navbar />
       <Routes>
         <Route path='/posts' element={<PostsList />} />
         <Route path='/posts/:id' element={<PostDetails />} />
-        <Route path='/posts/:id/create' element={<PostAdd />} />
+        <Route path='/posts/create' element={<PostAdd />} />
         <Route path='/posts/:id/update' element={<PostEdit />} />
         <Route path='*' element={<Navigate to={'/posts'} />} />
       </Routes>
