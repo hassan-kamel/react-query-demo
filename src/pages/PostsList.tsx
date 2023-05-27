@@ -3,6 +3,7 @@ import { getPosts, Post } from '../api/posts';
 import PostCard from '../components/PostCard';
 import Loading from '../components/Loading';
 const PostsList = () => {
+  const x = 'test';
   const {
     data: posts,
     error,
